@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color: #E5E5E5;
+    --bg-color-dark: rgb(17, 17, 19);
+    --text-color: hsla(240, 6%, 21%, 1);
+
+    --bg-sound-color: hsla(194, 97%, 31%, 1);
+    --bg-sound-color-dark: hsla(195, 74%, 15%, 1);
+    --bg-sound-color-black: hsla(240, 6%, 17%, 1);
+    --text-sound-color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+.change-color-bg-page{
+    background-color: var(--bg-color-dark);
+}
+
+main {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+head {
+    max-height: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+div.change-mode{
+    padding: 6.4rem 0 0 94%;
+    min-height: 11.1rem;
+}
+
+.change-color-mode:focus svg path:nth-child(1){
+    fill: var(--bg-sound-color-dark);
+}
+
+.change-color-mode-bg svg path:nth-child(1){
+    fill: var(--bg-sound-color-black);
+}
+
+/* TROCA AS CORES DOS BOTOES DE SOM */
+.change-color-bg:focus svg path:nth-child(1){
+    fill: var(--bg-sound-color);
+} 
+
+.change-color-tx:focus svg path:nth-child(2){
+    fill: var(--text-sound-color);
+}
+
+.change-color-sounds-tx svg path:nth-child(2){
+    fill: var(--text-sound-color);
+}
+
+.change-color-controls-tx svg path:nth-child(1){
+    fill: var(--text-sound-color);
+}
+
+#timer {
+    color: var(--text-color);
+    font-size: 12.6rem;
+    display: flex;
+}
+
+.change-color-timer{
+    color: var(--text-sound-color);
+}
+
+#controls {
+    display: flex;
+    gap: 4rem;
+}
+
+#sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+#sounds .forest, #sounds .rain{
+    justify-content: center;
+    align-self: end;
+}
